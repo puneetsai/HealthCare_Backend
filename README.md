@@ -39,7 +39,7 @@ healthcare\_backend/
 ├── config/             # Project settings and URLs
 ├── manage.py           # Django CLI entry point
 ├── requirements.txt    # All required Python packages
-└── .gitignore          # Ignored files/folders
+
 
 
 
