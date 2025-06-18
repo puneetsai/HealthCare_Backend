@@ -34,7 +34,7 @@ This is a backend system for a healthcare management application built using Dja
 
 
 
-healthcare\_backend/
+HealthCare_Backend/
 ├── core/               # Main app: models, views, serializers
 ├── config/             # Project settings and URLs
 ├── manage.py           # Django CLI entry point
@@ -62,8 +62,8 @@ DB_PORT=5432
 ### 🔁 Step 1: Clone the Repository
 
 bash
-git clone https://github.com/your-username/healthcare-backend.git
-cd healthcare-backend
+git clone https://github.com/your-username/HealthCare_Backend.git
+cd HealthCare_Backend
 
 
 ### 🔁 Step 2: Create Virtual Environment
