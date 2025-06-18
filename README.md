@@ -16,7 +16,7 @@ This is a backend system for a healthcare management application built using Dja
 - 🔐 Secure access to patient & doctor data via JWT
 - 💾 PostgreSQL as the database (configured via `.env`)
 
----
+
 
 ## 🧑‍💻 Tech Stack
 
@@ -29,11 +29,10 @@ This is a backend system for a healthcare management application built using Dja
 | SimpleJWT             | Authentication (access/refresh token)|
 | Python Decouple       | Secure environment variable handling  |
 
----
 
 ## 📁 Folder Structure
 
-```
+
 
 healthcare\_backend/
 ├── core/               # Main app: models, views, serializers
@@ -42,14 +41,13 @@ healthcare\_backend/
 ├── requirements.txt    # All required Python packages
 └── .gitignore          # Ignored files/folders
 
-````
 
----
+
 
 ## 🔧 Environment Variables
 
 Create a `.env` file in the root folder:
-```env
+env
 SECRET_KEY=your-django-secret-key
 DEBUG=True
 DB_NAME=healthcare
@@ -63,23 +61,23 @@ DB_PORT=5432
 
 ### 🔁 Step 1: Clone the Repository
 
-```bash
+bash
 git clone https://github.com/your-username/healthcare-backend.git
 cd healthcare-backend
-```
+
 
 ### 🔁 Step 2: Create Virtual Environment
 
-```bash
+bash
 python -m venv venv
 .\venv\Scripts\activate   # On Windows
-```
+
 
 ### 🔁 Step 3: Install Dependencies
 
-```bash
+bash
 pip install -r requirements.txt
-```
+
 
 ### 🔁 Step 4: Add `.env` File
 
@@ -87,16 +85,16 @@ Create `.env` in the root directory and copy the required environment variables.
 
 ### 🔁 Step 5: Run Migrations
 
-```bash
+bash
 python manage.py makemigrations
 python manage.py migrate
-```
+
 
 ### 🔁 Step 6: Run the Development Server
 
-```bash
+bash
 python manage.py runserver
-```
+
 By default, the project runs locally on:
 
 
@@ -145,9 +143,9 @@ If you deploy the project online (e.g., Render, Railway), you’ll get a public 
 
 > 💡 All patient and doctor endpoints require a valid `JWT` token in the `Authorization` header:
 
-```
+
 Authorization: Bearer <your_access_token>
-```
+
 
 
 ## 📬 Postman Testing
@@ -157,9 +155,8 @@ You can test the API using Postman
 1. Register and log in
 2. Copy the `access` token
 3. Set it in the header:
-
-   ```
+   
    Authorization: Bearer your_token_here
-   ```
+
 
 
